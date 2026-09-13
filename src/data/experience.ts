@@ -1,9 +1,15 @@
+export type ExperienceType = "job" | "training" | "education";
+export type ExperienceStatus = "current" | "completed";
+
 export interface ExperienceItem {
   id: string;
   period: string;
   role: string;
   org: string;
   description: string;
+  type: ExperienceType;
+  status: ExperienceStatus;
+  tags: string[];
 }
 
 export const experience: ExperienceItem[] = [
@@ -14,6 +20,9 @@ export const experience: ExperienceItem[] = [
     org: "Carina Softlabs Inc.",
     description:
       "Professional game-development work across Unity projects, including gameplay implementation, UI integration, debugging, mobile functionality, third-party SDKs and production fixes.",
+    type: "job",
+    status: "current",
+    tags: ["Unity", "C#", "Photon"],
   },
   {
     id: "brototype",
@@ -22,6 +31,9 @@ export const experience: ExperienceItem[] = [
     org: "Brototype / BroCamp",
     description:
       "Built a portfolio of 2D and 3D games while developing practical skills in C#, Unity architecture, gameplay programming, multiplayer and optimization.",
+    type: "training",
+    status: "current",
+    tags: ["C#", "Unity Architecture", "Multiplayer"],
   },
   {
     id: "st-aloysius",
@@ -30,5 +42,8 @@ export const experience: ExperienceItem[] = [
     org: "St. Aloysius College, Thrissur",
     description:
       "Commerce graduate who transitioned into software and game development through focused, hands-on learning.",
+    type: "education",
+    status: "completed",
+    tags: ["Commerce", "Analytical Foundations"],
   },
 ];

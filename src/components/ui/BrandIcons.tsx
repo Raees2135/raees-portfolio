@@ -15,11 +15,3 @@ export function LinkedinIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
-
-export function YoutubeIcon(props: SVGProps<SVGSVGElement>) {
-  return (
-    <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
-      <path d="M23.498 6.186a2.998 2.998 0 0 0-2.115-2.115C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.383.571A2.998 2.998 0 0 0 .502 6.186 31.09 31.09 0 0 0 0 12a31.09 31.09 0 0 0 .502 5.814 2.998 2.998 0 0 0 2.115 2.115C4.495 20.5 12 20.5 12 20.5s7.505 0 9.383-.571a2.998 2.998 0 0 0 2.115-2.115A31.09 31.09 0 0 0 24 12a31.09 31.09 0 0 0-.502-5.814zM9.75 15.568V8.432L15.818 12 9.75 15.568z" />
-    </svg>
-  );
-}

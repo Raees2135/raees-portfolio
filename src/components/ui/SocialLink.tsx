@@ -2,13 +2,12 @@ import { motion } from "framer-motion";
 import type { ComponentType, SVGProps } from "react";
 
 import type { SocialLink as SocialLinkData } from "../../data/profile";
-import { GithubIcon, LinkedinIcon, YoutubeIcon } from "./BrandIcons";
+import { GithubIcon, LinkedinIcon } from "./BrandIcons";
 import { revealChildVariants } from "../../lib/motion";
 
 const iconMap: Record<SocialLinkData["icon"], ComponentType<SVGProps<SVGSVGElement>>> = {
   github: GithubIcon,
   linkedin: LinkedinIcon,
-  youtube: YoutubeIcon,
 };
 
 interface SocialLinkProps {

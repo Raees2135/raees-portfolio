@@ -11,7 +11,8 @@ export interface CodeLine {
 export const heroCopy = {
   headingLine1: "I build games",
   headingLine2Prefix: "that ",
-  headingAccent: "feel alive.",
+  headingAccent1: "feel",
+  headingAccent2: "alive.",
   body: "I'm Mohammed Raees, a Unity game developer focused on gameplay programming, immersive 2D/3D experiences, multiplayer systems and mobile games.",
   primaryCta: "Explore My Work",
   secondaryCta: "Download Resume",

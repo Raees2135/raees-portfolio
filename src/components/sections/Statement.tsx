@@ -6,7 +6,7 @@ export function Statement() {
   const { statement } = profile;
 
   return (
-    <section className="mx-auto max-w-375 px-6 py-24 text-center md:px-10 md:py-32">
+    <section className="mx-auto flex min-h-[calc(100vh-78px)] max-w-375 flex-col justify-center border-t border-border px-6 py-24 text-center md:px-10 md:py-32">
       <RevealOnScroll className="mx-auto flex max-w-2xl flex-col items-center">
         <Eyebrow text={statement.eyebrow} />
         <h2 className="mt-6 text-[clamp(2.75rem,7vw,5.7rem)] font-bold leading-[1.05] tracking-[-0.02em] font-display text-fg">

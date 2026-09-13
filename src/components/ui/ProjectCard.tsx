@@ -1,4 +1,5 @@
-import { motion } from "framer-motion";
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import {
   ArrowUpRight,
   Car,
@@ -13,7 +14,6 @@ import {
 import type { LucideIcon } from "lucide-react";
 
 import type { Project, ProjectIconKey } from "../../data/projects";
-import { revealChildVariants } from "../../lib/motion";
 
 const iconMap: Record<ProjectIconKey, LucideIcon> = {
   swords: Swords,
@@ -31,16 +31,27 @@ interface ProjectCardProps {
 }
 
 export function ProjectCard({ project }: ProjectCardProps) {
+  const ref = useRef<HTMLElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start 100%", "start 60%"],
+  });
+
+  const opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
+  const y = useTransform(scrollYProgress, [0, 1], [70, 0]);
+  const scale = useTransform(scrollYProgress, [0, 1], [0.94, 1]);
+
   const Icon = iconMap[project.icon];
   const isProfessional = project.variant === "professional";
 
   const content = (
     <motion.article
-      variants={revealChildVariants}
-      className={`group flex h-full min-h-70 flex-col justify-between rounded-2xl border border-border bg-surface p-6 transition-all duration-300 hover:-translate-y-1 hover:border-[#4c542e] ${
+      ref={ref}
+      style={{ opacity, y, scale }}
+      className={`group flex h-full min-h-70 flex-col justify-between rounded-2xl border border-border p-6 transition-all duration-300 hover:-translate-y-1 hover:border-[#4c542e] ${
         project.featured
-          ? "min-h-125 bg-[linear-gradient(145deg,#15191a,#101217)] md:row-span-2 md:p-8"
-          : ""
+          ? "bg-[linear-gradient(145deg,#15191a,#101217)]"
+          : "bg-surface"
       }`}
     >
       <div>
@@ -61,14 +72,8 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </div>
 
         <div className="mt-6 flex items-center gap-3">
-          <Icon
-            className={`text-accent ${project.featured ? "size-8" : "size-6"}`}
-          />
-          <h3
-            className={`font-display font-semibold text-fg ${
-              project.featured ? "text-2xl" : "text-lg"
-            }`}
-          >
+          <Icon className="size-6 text-accent" />
+          <h3 className="font-display text-lg font-semibold text-fg">
             {project.title}
           </h3>
         </div>
@@ -96,12 +101,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
   }
 
   return (
-    <a
-      href={project.href}
-      target="_blank"
-      rel="noreferrer"
-      className={`block h-full ${project.featured ? "md:row-span-2" : ""}`}
-    >
+    <a href={project.href} target="_blank" rel="noreferrer" className="block h-full">
       {content}
     </a>
   );

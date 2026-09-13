@@ -8,6 +8,7 @@ const REACH_MARKERS: [number, number][] = [
   [51.5074, -0.1278], // London
   [35.6762, 139.6503], // Tokyo
   [-33.8688, 151.2093], // Sydney
+  [6.5244, 3.3792], // Lagos, Nigeria
 ];
 
 export function Globe() {

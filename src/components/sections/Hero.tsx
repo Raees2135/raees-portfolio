@@ -1,6 +1,6 @@
 import { lazy, Suspense } from "react";
 import { motion } from "framer-motion";
-import { ArrowDown, Download } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 
 import { profile } from "../../data/profile";
 import { heroCopy, heroStats } from "../../data/hero";
@@ -30,7 +30,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="mx-auto grid max-w-375 gap-16 px-6 pt-16 pb-24 md:min-h-[calc(100vh-78px)] md:grid-cols-[1.1fr_0.9fr] md:items-center md:gap-12 md:px-10 md:pt-0 md:pb-0"
+      className="mx-auto grid min-h-[calc(100vh-78px)] max-w-375 items-center gap-16 px-6 py-16 md:grid-cols-[1.1fr_0.9fr] md:gap-12 md:px-10 md:py-0"
     >
       <motion.div
         initial="hidden"
@@ -51,7 +51,8 @@ export function Hero() {
           {heroCopy.headingLine1}
           <br />
           {heroCopy.headingLine2Prefix}
-          <span className="text-accent italic">{heroCopy.headingAccent}</span>
+          <span className="text-accent italic">{heroCopy.headingAccent1}</span><br />
+          <span className="text-accent italic">{heroCopy.headingAccent2}</span>
         </motion.h1>
 
         <motion.p
@@ -68,12 +69,7 @@ export function Hero() {
           <Button href="#projects" icon={<ArrowDown className="size-4" />}>
             {heroCopy.primaryCta}
           </Button>
-          <Button
-            href={profile.resumeUrl}
-            download
-            variant="ghost"
-            icon={<Download className="size-4" />}
-          >
+          <Button href={profile.resumeUrl} download variant="ghost">
             {heroCopy.secondaryCta}
           </Button>
         </motion.div>
@@ -113,7 +109,7 @@ export function Hero() {
           </Suspense>
         </div>
 
-        <div className="relative z-10 w-full max-w-xs rounded-2xl border border-border/40 bg-surface/40 p-6 font-mono text-sm leading-relaxed shadow-2xl backdrop-blur-lg">
+        <div className="relative z-10 w-fit max-w-md rounded-2xl border border-border/40 bg-surface/40 p-6 font-mono text-sm leading-relaxed shadow-2xl backdrop-blur-lg">
           <p className="mb-2 text-xs text-fg/40">01</p>
           {heroCopy.codeSnippet.map((line, index) => (
             <p
@@ -129,10 +125,6 @@ export function Hero() {
               {line.text}
             </p>
           ))}
-        </div>
-
-        <div className="absolute -bottom-4 right-4 rounded-full border border-border bg-surface px-3 py-2 text-[9px] font-semibold tracking-[0.15em] text-fg/60 uppercase shadow-lg">
-          {heroCopy.floatingTag}
         </div>
       </motion.div>
     </section>

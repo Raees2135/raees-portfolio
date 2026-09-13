@@ -6,7 +6,7 @@ export interface NavLink {
 export interface SocialLink {
   label: string;
   href: string;
-  icon: "github" | "linkedin" | "youtube";
+  icon: "github" | "linkedin";
 }
 
 export interface Profile {
@@ -66,12 +66,6 @@ export const profile: Profile = {
       label: "LinkedIn",
       href: "https://www.linkedin.com/in/mohammed-raees-5b611a126/",
       icon: "linkedin",
-    },
-    // TODO: replace with Mohammed's real YouTube channel URL before publishing.
-    {
-      label: "YouTube",
-      href: "https://www.youtube.com/",
-      icon: "youtube",
     },
   ],
   statement: {

@@ -3,6 +3,7 @@ import { ArrowUpRight, Menu, X } from "lucide-react";
 
 import { profile } from "../../data/profile";
 import { useMobileNav } from "../../hooks/useMobileNav";
+import { NavLink } from "../ui/NavLink";
 
 export function Header() {
   const { isOpen, toggle, close, panelRef } = useMobileNav();
@@ -20,13 +21,7 @@ export function Header() {
 
         <nav className="hidden items-center gap-8 md:flex">
           {profile.navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="text-sm text-fg/70 transition-colors hover:text-fg"
-            >
-              {link.label}
-            </a>
+            <NavLink key={link.href} href={link.href} label={link.label} />
           ))}
         </nav>
 

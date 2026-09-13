@@ -8,7 +8,7 @@ export function Skills() {
   return (
     <section
       id="skills"
-      className="mx-auto max-w-375 px-6 py-24 md:px-10 md:py-32"
+      className="mx-auto flex min-h-[calc(100vh-78px)] max-w-375 flex-col justify-center border-t border-border px-6 py-24 md:px-10 md:py-32"
     >
       <SectionLabel label="04 / TOOLKIT" />
       <h2 className="mt-6 text-[clamp(2.4rem,5.5vw,4.7rem)] font-bold leading-[0.98] tracking-[-0.02em] font-display text-fg">
@@ -22,7 +22,7 @@ export function Skills() {
         whileInView="visible"
         viewport={{ once: true, amount: 0.1 }}
         variants={{ visible: { transition: { staggerChildren: 0.08 } } }}
-        className="mt-12 grid gap-px overflow-hidden rounded-2xl border border-border bg-border sm:grid-cols-2"
+        className="mt-14 grid gap-x-16 gap-y-12 sm:grid-cols-2"
       >
         {skillGroups.map((group) => (
           <SkillGroupCard key={group.title} group={group} />

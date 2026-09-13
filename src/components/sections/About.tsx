@@ -9,9 +9,14 @@ export function About() {
   return (
     <section
       id="about"
-      className="mx-auto max-w-375 px-6 py-24 md:px-10 md:py-32"
+      className="relative mx-auto flex min-h-[calc(100vh-78px)] max-w-375 items-center overflow-hidden border-t border-border px-6 py-24 md:px-10 md:py-32"
     >
-      <RevealOnScroll className="grid gap-12 md:grid-cols-2 md:gap-16">
+      <div
+        className="pointer-events-none absolute top-1/4 right-0 size-96 rounded-full bg-accent/10 blur-3xl"
+        aria-hidden
+      />
+
+      <RevealOnScroll className="relative grid w-full gap-12 md:grid-cols-2 md:gap-16">
         <div>
           <SectionLabel label="01 / ABOUT" />
           <h2 className="mt-6 text-[clamp(2.4rem,5.5vw,4.7rem)] font-bold leading-[0.98] tracking-[-0.02em] font-display text-fg">

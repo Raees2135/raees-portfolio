@@ -1,5 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import { ReactLenis } from "lenis/react";
 
 import "@fontsource/inter/400.css";
 import "@fontsource/inter/500.css";
@@ -20,6 +21,14 @@ if (!rootElement) {
 
 createRoot(rootElement).render(
   <StrictMode>
-    <App />
+    <ReactLenis
+      root
+      options={{
+        lerp: 0.1,
+        anchors: { offset: -78 },
+      }}
+    >
+      <App />
+    </ReactLenis>
   </StrictMode>,
 );
