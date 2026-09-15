@@ -13,7 +13,7 @@ export function Contact() {
       className="section-divider mx-auto flex min-h-[min(100vh-78px,30rem)] max-w-375 flex-col justify-center px-6 py-24 text-center md:px-10 md:py-32"
     >
       <RevealOnScroll className="flex flex-col items-center">
-        <SectionLabel label="05 / CONTACT" />
+        <SectionLabel label="06 / CONTACT" />
         <h2 className="mt-6 text-[clamp(3rem,8vw,6.9rem)] font-bold leading-[1.02] tracking-[-0.02em] font-display text-fg">
           {profile.contact.headingLine1}
           <br />

@@ -15,35 +15,24 @@ export interface ExperienceItem {
 export const experience: ExperienceItem[] = [
   {
     id: "carina-softlabs",
-    period: "2025 — PRESENT",
-    role: "Unity Developer",
+    period: "2025 — 2026",
+    role: "Unity/Roblox Game Developer",
     org: "Carina Softlabs Inc.",
     description:
       "Professional game-development work across Unity projects, including gameplay implementation, UI integration, debugging, mobile functionality, third-party SDKs and production fixes.",
     type: "job",
-    status: "current",
-    tags: ["Unity", "C#", "Photon"],
-  },
-  {
-    id: "brototype",
-    period: "2023 — PRESENT",
-    role: "Unity Game Development",
-    org: "Brototype / BroCamp",
-    description:
-      "Built a portfolio of 2D and 3D games while developing practical skills in C#, Unity architecture, gameplay programming, multiplayer and optimization.",
-    type: "training",
-    status: "current",
-    tags: ["C#", "Unity Architecture", "Multiplayer"],
-  },
-  {
-    id: "st-aloysius",
-    period: "2019 — 2022",
-    role: "B.Com",
-    org: "St. Aloysius College, Thrissur",
-    description:
-      "Commerce graduate who transitioned into software and game development through focused, hands-on learning.",
-    type: "education",
     status: "completed",
-    tags: ["Commerce", "Analytical Foundations"],
+    tags: ["Unity", "Roblox", "C#", "Photon"],
+  },
+  {
+    id: "peru-aryilla-job",
+    period: "2024 — 2025",
+    role: "Python Developer",
+    org: "Peru Aryilla",
+    description:
+      "Backend and scripting work in Python, building internal tools and automations and contributing to production features alongside an experienced engineering team.",
+    type: "job",
+    status: "completed",
+    tags: ["Python", "Automation"],
   },
 ];
