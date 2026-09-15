@@ -8,7 +8,7 @@ export function Skills() {
   return (
     <section
       id="skills"
-      className="mx-auto flex min-h-[calc(100vh-78px)] max-w-375 flex-col justify-center border-t border-border px-6 py-24 md:px-10 md:py-32"
+      className="section-divider mx-auto flex min-h-[min(100vh-78px,51.25rem)] max-w-375 flex-col justify-center px-6 py-24 md:px-10 md:py-32"
     >
       <SectionLabel label="04 / TOOLKIT" />
       <h2 className="mt-6 text-[clamp(2.4rem,5.5vw,4.7rem)] font-bold leading-[0.98] tracking-[-0.02em] font-display text-fg">

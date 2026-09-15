@@ -10,7 +10,7 @@ export function Contact() {
   return (
     <section
       id="contact"
-      className="mx-auto flex min-h-[calc(100vh-78px)] max-w-375 flex-col justify-center border-t border-border px-6 py-24 text-center md:px-10 md:py-32"
+      className="section-divider mx-auto flex min-h-[min(100vh-78px,30rem)] max-w-375 flex-col justify-center px-6 py-24 text-center md:px-10 md:py-32"
     >
       <RevealOnScroll className="flex flex-col items-center">
         <SectionLabel label="05 / CONTACT" />

@@ -6,7 +6,7 @@ export function Projects() {
   return (
     <section
       id="projects"
-      className="flex min-h-[calc(100vh-78px)] flex-col justify-center bg-surface-2 py-24 md:py-32"
+      className="flex min-h-[min(100vh-78px,51.25rem)] flex-col justify-center bg-surface-2 py-24 md:py-32"
     >
       <div className="mx-auto max-w-330 px-6 md:px-10">
         <SectionLabel label="03 / SELECTED WORK" />

@@ -9,7 +9,7 @@ export function About() {
   return (
     <section
       id="about"
-      className="relative mx-auto flex min-h-[calc(100vh-78px)] max-w-375 items-center overflow-hidden border-t border-border px-6 py-24 md:px-10 md:py-32"
+      className="section-divider relative mx-auto flex min-h-[min(100vh-78px,51.25rem)] max-w-375 items-center overflow-hidden px-6 py-24 md:px-10 md:py-32"
     >
       <div
         className="pointer-events-none absolute top-1/4 right-0 size-96 rounded-full bg-accent/10 blur-3xl"

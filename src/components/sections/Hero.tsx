@@ -30,7 +30,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="mx-auto grid min-h-[calc(100vh-78px)] max-w-375 items-center gap-16 px-6 py-16 md:grid-cols-[1.1fr_0.9fr] md:gap-12 md:px-10 md:py-0"
+      className="mx-auto grid min-h-[min(100vh-78px,51.25rem)] max-w-375 items-center gap-16 px-6 py-16 md:grid-cols-[1.1fr_0.9fr] md:gap-12 md:px-10 md:py-0"
     >
       <motion.div
         initial="hidden"
@@ -97,7 +97,7 @@ export function Hero() {
       >
         <div className="absolute inset-0 overflow-hidden">
           <div
-            className="absolute inset-0 [transform:perspective(500px)_rotateX(62deg)] bg-floor-grid opacity-30"
+            className="absolute inset-0 [transform:perspective(900px)_rotateX(35deg)] bg-floor-grid opacity-55"
             aria-hidden
           />
           <div

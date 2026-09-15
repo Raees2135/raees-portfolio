@@ -39,5 +39,28 @@
       linear-gradient(#25282e 1px, transparent 1px),
       linear-gradient(90deg, #25282e 1px, transparent 1px);
     background-size: 40px 40px;
+    mask-image: radial-gradient(
+      ellipse 100% 100% at 50% 50%,
+      black 0%,
+      black 85%,
+      transparent 100%
+    );
+    -webkit-mask-image: radial-gradient(
+      ellipse 100% 100% at 50% 50%,
+      black 0%,
+      black 85%,
+      transparent 100%
+    );
+  }
+
+  .section-divider {
+    border-top: 1px solid transparent;
+    border-image: linear-gradient(
+        to right,
+        transparent,
+        var(--color-border) 50%,
+        transparent
+      )
+      1;
   }
 }
