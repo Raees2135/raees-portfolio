@@ -30,12 +30,18 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="mx-auto grid min-h-[min(100vh-78px,51.25rem)] max-w-375 items-center gap-16 px-6 py-16 md:grid-cols-[1.1fr_0.9fr] md:gap-12 md:px-10 md:py-0"
+      className="relative mx-auto grid min-h-[min(100vh-78px,51.25rem)] max-w-375 items-center gap-16 overflow-hidden px-6 py-16 md:grid-cols-[1.1fr_0.9fr] md:gap-12 md:px-10 md:py-0"
     >
+      <div
+        className="absolute inset-0 z-0 transform-[perspective(900px)_rotateX(35deg)] bg-floor-grid opacity-100"
+        aria-hidden
+      />
+
       <motion.div
         initial="hidden"
         animate="visible"
         variants={containerVariants}
+        className="relative z-10"
       >
         <motion.p
           variants={itemVariants}
@@ -89,17 +95,13 @@ export function Hero() {
         </motion.div>
       </motion.div>
 
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.25 }}
-        className="relative flex min-h-[380px] items-center justify-center md:min-h-[480px]"
-      >
-        <div className="absolute inset-0 overflow-hidden">
-          <div
-            className="absolute inset-0 [transform:perspective(900px)_rotateX(35deg)] bg-floor-grid opacity-55"
-            aria-hidden
-          />
+      <div className="relative z-10 flex min-h-[380px] items-center justify-center md:min-h-[480px]">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.25 }}
+          className="absolute inset-0 overflow-hidden"
+        >
           <div
             className="absolute top-1/2 left-1/2 size-72 -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent/25 blur-3xl"
             aria-hidden
@@ -107,7 +109,7 @@ export function Hero() {
           <Suspense fallback={null}>
             <Globe />
           </Suspense>
-        </div>
+        </motion.div>
 
         <div className="relative z-10 w-fit max-w-md rounded-2xl border border-border/40 bg-surface/40 p-6 font-mono text-sm leading-relaxed shadow-2xl backdrop-blur-lg">
           <p className="mb-2 text-xs text-fg/40">01</p>
@@ -126,7 +128,7 @@ export function Hero() {
             </p>
           ))}
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 }

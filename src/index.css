@@ -40,17 +40,48 @@
       linear-gradient(90deg, #25282e 1px, transparent 1px);
     background-size: 40px 40px;
     mask-image: radial-gradient(
-      ellipse 100% 100% at 50% 50%,
+      ellipse 65% 70% at 50% 65%,
       black 0%,
-      black 85%,
+      black 20%,
+      rgba(0, 0, 0, 0.7) 40%,
+      rgba(0, 0, 0, 0.4) 60%,
+      rgba(0, 0, 0, 0.15) 80%,
       transparent 100%
     );
     -webkit-mask-image: radial-gradient(
-      ellipse 100% 100% at 50% 50%,
+      ellipse 65% 70% at 50% 65%,
       black 0%,
-      black 85%,
+      black 20%,
+      rgba(0, 0, 0, 0.7) 40%,
+      rgba(0, 0, 0, 0.4) 60%,
+      rgba(0, 0, 0, 0.15) 80%,
       transparent 100%
     );
+  }
+
+  @media (min-width: 768px) {
+    .bg-floor-grid {
+      mask-image: radial-gradient(
+        ellipse 50% 65% at 75% 45%,
+        black 0%,
+        black 18%,
+        rgba(0, 0, 0, 0.75) 32%,
+        rgba(0, 0, 0, 0.45) 50%,
+        rgba(0, 0, 0, 0.2) 68%,
+        rgba(0, 0, 0, 0.05) 85%,
+        transparent 100%
+      );
+      -webkit-mask-image: radial-gradient(
+        ellipse 50% 65% at 75% 45%,
+        black 0%,
+        black 18%,
+        rgba(0, 0, 0, 0.75) 32%,
+        rgba(0, 0, 0, 0.45) 50%,
+        rgba(0, 0, 0, 0.2) 68%,
+        rgba(0, 0, 0, 0.05) 85%,
+        transparent 100%
+      );
+    }
   }
 
   .section-divider {
