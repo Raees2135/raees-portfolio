@@ -3,7 +3,7 @@ import type { ExperienceItem } from "./experience";
 export const education: ExperienceItem[] = [
   {
     id: "brototype",
-    period: "2024 — 2025",
+    period: "2023 — 2024",
     role: "Unity Game Developer",
     org: "Brototype / BroCamp",
     description:
@@ -13,10 +13,10 @@ export const education: ExperienceItem[] = [
     tags: ["C#", "Unity Architecture", "Multiplayer"],
   },
   {
-    id: "peru-aryilla-training",
-    period: "2023 — 2024",
+    id: "cb-tech",
+    period: "2022 — 2023",
     role: "Python Development",
-    org: "Peru Aryilla",
+    org: "CB Tech",
     description:
       "Hands-on training in Python fundamentals, data structures and backend development practices, building small projects and automation scripts.",
     type: "training",

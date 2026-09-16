@@ -15,7 +15,7 @@ export interface ExperienceItem {
 export const experience: ExperienceItem[] = [
   {
     id: "carina-softlabs",
-    period: "2025 — 2026",
+    period: "Jan 2025 — July 2026",
     role: "Unity/Roblox Game Developer",
     org: "Carina Softlabs Inc.",
     description:
@@ -25,10 +25,10 @@ export const experience: ExperienceItem[] = [
     tags: ["Unity", "Roblox", "C#", "Photon"],
   },
   {
-    id: "peru-aryilla-job",
-    period: "2024 — 2025",
+    id: "cb-tech-job",
+    period: "July 2022 — Jan 2023",
     role: "Python Developer",
-    org: "Peru Aryilla",
+    org: "CB Tech",
     description:
       "Backend and scripting work in Python, building internal tools and automations and contributing to production features alongside an experienced engineering team.",
     type: "job",

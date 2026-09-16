@@ -12,6 +12,7 @@ export const skillGroups: SkillGroup[] = [
     icon: "gamepad",
     items: [
       "Unity 2D / 3D",
+      "Roblox",
       "Gameplay Programming",
       "Physics",
       "Character Controllers",
@@ -27,6 +28,7 @@ export const skillGroups: SkillGroup[] = [
     icon: "code",
     items: [
       "C#",
+      "Lua",
       "C / C++",
       "Java",
       "OOP",

@@ -28,7 +28,7 @@ export const heroCopy = {
 };
 
 export const heroStats: HeroStat[] = [
-  { label: "Unity", value: "Game Development" },
+  { label: "Unity / Roblox", value: "Game Development" },
   { label: "C#", value: "Gameplay Programming" },
   { label: "2D/3D", value: "Interactive Experiences" },
 ];
