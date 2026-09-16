@@ -9,7 +9,7 @@ export function About() {
   return (
     <section
       id="about"
-      className="section-divider relative mx-auto flex min-h-[min(100vh-78px,51.25rem)] max-w-375 items-center overflow-hidden px-6 py-24 md:px-10 md:py-32"
+      className="section-divider relative mx-auto flex flex-col lg:flex-row min-h-[min(100vh-78px,51.25rem)] max-w-375 items-center overflow-hidden px-6 py-24 md:px-10 md:py-32 gap-20 lg:gap-0"
     >
       <div
         className="pointer-events-none absolute top-1/4 right-0 size-96 rounded-full bg-accent/10 blur-3xl"
@@ -61,7 +61,7 @@ export function About() {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-        className="pointer-events-none absolute -right-12 top-1/2 -translate-y-1/2 hidden lg:block"
+        className="pointer-events-none relative mt-10 flex w-full justify-center lg:absolute lg:-right-12 lg:top-1/2 lg:mt-0 lg:block lg:w-auto lg:-translate-y-1/2"
       >
         <div className="relative flex items-center justify-center">
           {/* Neon Aura */}
