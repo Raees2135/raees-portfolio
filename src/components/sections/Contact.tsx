@@ -24,9 +24,7 @@ export function Contact() {
         </p>
 
         <a
-          href={`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(profile.email)}`}
-          target="_blank"
-          rel="noreferrer"
+          href={`mailto:${profile.email}`}
           className="mt-8 inline-flex items-center gap-2 border-b border-accent/30 pb-1 font-display text-[clamp(1.25rem,3vw,2.2rem)] font-semibold text-accent transition-colors hover:border-accent"
         >
           {profile.email}

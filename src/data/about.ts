@@ -4,8 +4,10 @@ export interface Fact {
 }
 
 export const aboutCopy = {
-  headingLine1: "From ideas to",
-  headingAccent: "playable worlds.",
+  headingLine1: "From ideas",
+  headingLine2Prefix: "to",
+  headingAccentLine2: "playable",
+  headingAccentLine3: "worlds.",
   lead: "I'm a Unity game developer who enjoys turning mechanics, systems and creative ideas into polished interactive experiences.",
   body: "My work spans gameplay programming, player controllers, UI, physics, AI/navigation, multiplayer, mobile development, optimization, effects and game systems. I'm continuously improving my engineering skills while building both personal and professional projects.",
 };

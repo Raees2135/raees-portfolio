@@ -30,7 +30,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative mx-auto grid min-h-[min(100vh-78px,51.25rem)] max-w-375 items-center gap-16 overflow-hidden px-6 py-16 md:grid-cols-[1.1fr_0.9fr] md:gap-12 md:px-10 md:py-0"
+      className="relative mx-auto grid min-h-[min(100vh-78px,51.25rem)] max-w-375 items-center gap-16 overflow-hidden px-6 py-16 md:grid-cols-[1.1fr_0.9fr] md:gap-12 md:px-10 md:py-16"
     >
       <div
         className="absolute inset-0 z-0 transform-[perspective(900px)_rotateX(35deg)] bg-floor-grid opacity-100"
